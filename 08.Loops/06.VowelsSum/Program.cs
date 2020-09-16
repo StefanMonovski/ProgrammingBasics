@@ -1,0 +1,37 @@
+﻿using System;
+
+namespace _06.VowelsSum
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+            int sum = 0;
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (input[i] == 'a')
+                {
+                    sum = sum + 1;
+                }
+                else if (input[i] == 'e')
+                {
+                    sum = sum + 2;
+                }
+                else if (input[i] == 'i')
+                {
+                    sum = sum + 3;
+                }
+                else if (input[i] == 'o')
+                {
+                    sum = sum + 4;
+                }
+                else if (input[i] == 'u')
+                {
+                    sum = sum + 5;
+                }
+            }
+            Console.WriteLine(sum);
+        }
+    }
+}
